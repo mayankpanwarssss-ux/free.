@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>£1000 Apple Pay - UK Only</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('bg.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.small {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yes {
+    background: #e21b23;
+    color: white;
+}
+
+.no {
+    background: #c4171d;
+    color: white;
+}
+
+.notice {
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="container">
+        <div class="small">ANSWER QUESTION 1 OF 2</div>
+
+        <h1>Do you want £1000 towards Apple Pay?</h1>
+
+        <button class="btn yes" onclick="goOffer()">Yes</button>
+        <button class="btn no" onclick="goOffer()">No</button>
+
+        <div class="notice">
+            *Must be 18+. UK Android users only.  
+            Upon completion of program requirements.
+        </div>
+    </div>
+</div>
+
+<script>
+function goOffer() {
+    window.location.href = "https://singingfiles.com/show.php?l=0&u=2498791&id=73787";
+}
+
+// Android check
+if (!/Android/i.test(navigator.userAgent)) {
+    alert("This offer is only available for Android users in the UK.");
+}
+</script>
+
+</body>
+</html>
+

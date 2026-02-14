@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥 Exclusive Free Reward – Limited Time</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0f17;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.box {
+    background: #1f2430;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 30px auto;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ff4a00;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #cc3800;
+}
+
+.timer {
+    font-size: 18px;
+    color: #ff6961;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎉 You’ve Been Selected!</h1>
+    <p>Claim your exclusive free reward before time runs out!</p>
+
+    <div class="box">
+        <h2>Tap the button below</h2>
+        <p>Complete one quick step to unlock your prize.</p>
+
+        <!-- Your CPA link -->
+        <a href="https://singingfiles.com/show.php?l=0&u=2498791&id=73006" class="cta-btn" target="_blank" rel="noopener">
+            CLAIM YOUR REWARD
+        </a>
+
+        <div class="timer">
+            ⏳ Offer expires in <span id="countdown">05:00</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        * Limited time offer. Terms & conditions apply.
+    </div>
+
+</div>
+
+<script>
+let timeLeft = 300;
+const countdownEl = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    countdownEl.textContent = 
+      (minutes < 10 ? "0" : "") + minutes + ":" + 
+      (seconds < 10 ? "0" : "") + seconds;
+    timeLeft--;
+
+    if (timeLeft < 0) {
+        clearInterval(timer);
+        countdownEl.textContent = "00:00"; 
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
+
